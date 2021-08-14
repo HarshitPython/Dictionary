@@ -4,6 +4,7 @@ from difflib import get_close_matches
 data = json.load(open("data.json"))
 
 def translate(w):
+  # lower() means either you write in capital or in lower it will take only in lower
   w=w.lower()
   if w in data:
     return data[w]
